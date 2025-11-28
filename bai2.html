@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2</title>
+</head>
+<body>
+    <input type="text" id="hoten" placeholder="Họ và tên">
+    <button id="btn">Cảnh báo</button>
+
+    <script>
+        const input = document.getElementById("hoten");
+        const button = document.getElementById("btn");
+
+        button.addEventListener("click", () => {
+            const name = input.value.trim();
+            alert(`Truy tìm ${name}`);
+        });
+    </script>
+</body>
+</html>
