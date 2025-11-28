@@ -1,0 +1,22 @@
+<input type="text" id="ten" placeholder="Nhập tên">
+<input type="number" id="tuoi" placeholder="Nhập tuổi">
+<button id="btn">Hiển thị</button>
+
+<div id="ketqua"></div>
+
+<script>
+const tenInput = document.getElementById("ten");
+const tuoiInput = document.getElementById("tuoi");
+const ketqua = document.getElementById("ketqua");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+    const name = tenInput.value.trim();
+    const age = tuoiInput.value.trim();
+
+    ketqua.innerHTML = `
+        <h1 style="color: blue; font-weight: bold;">${name}</h1>
+        <h2 style="text-decoration: underline;">${age}</h2>
+    `;
+});
+</script>
